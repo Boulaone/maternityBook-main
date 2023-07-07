@@ -1,0 +1,121 @@
+/* body {
+    height: 100%;
+} */
+#main-calendrier{
+    display: block;
+    padding: 20px;
+}
+
+#main-calendrier i {
+    color: var(--tertiary-color);
+}
+
+#titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titre h2{
+    margin: 30px 40px;
+}
+
+#calendrier {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(125px, 1fr);
+}
+
+#semaine {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.jour {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    transition: box-shadow 0.3s;
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 1;
+}
+
+.jour-mois:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.ligne-jour > p {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.ligne-jour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ligne-jour i {
+    display: none;
+    width: 10px;
+    color: #4CAF50;
+}
+
+.btn-plus {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    transition: width 0.1s, border-radius 0.1s;
+}
+
+.btn-text {
+    display: block;
+}
+
+.btn-hover {
+    display: none;
+    font-size: 15px;
+    color: white;
+}
+
+.jour-semaine {
+    padding: 10px;
+    border: 1px solid;
+    text-align: center;
+}
+
+#jour-actuel {
+    background-color: #f2834b;
+}
+
+#jour-actuel p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rdvs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rdv {
+    padding: 5px;
+    background-color: var(--tertiary-color);
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 5px;
+}

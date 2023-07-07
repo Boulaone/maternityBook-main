@@ -1,0 +1,32 @@
+/* Styles pour les pages paramètres utilisateur */
+h1 {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    color: #0a0000;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}

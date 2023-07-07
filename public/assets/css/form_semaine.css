@@ -1,0 +1,67 @@
+main {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#info_bebe {
+    max-width: 30%;
+    display: inline-block;
+    margin: 10px 50px;
+    background-color: #CCCCCC;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-right: 5px;
+}
+
+img {
+    max-width: 250px;
+}
+
+p {
+    max-width: 300px;
+}
+
+/* i {
+    font-size: 50px;
+} */
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--tertiary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}

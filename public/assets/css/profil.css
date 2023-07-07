@@ -1,0 +1,68 @@
+main {
+    background-color: var(--secondary-color);
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.profil {
+    margin-top: 80px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.parent a {
+    margin: 20px;
+    background-color: #FDF5E6;
+    padding: 8px;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.parent a:hover {
+    transform: scale(1.1);
+}
+
+.profil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid black 1px;
+}
+
+.resume {
+    width: 50%;
+    text-align: center;
+}
+
+.resume article {
+    margin-bottom: 1.5rem;
+}
+
+.resume article p {
+    margin: 0;
+}
+
+.resume h2 {
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.jour-accouchement {
+    padding: 40px;
+    width: 100%;
+    background-color: #FDF5E6;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.info-grossesse {
+    font-weight: bold;
+}

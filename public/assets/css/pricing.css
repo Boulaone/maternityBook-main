@@ -1,0 +1,41 @@
+/* Styles de la tarification */
+#pricing{
+    background-color:#BB5A3A;
+}
+
+#pricing h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.prix{
+    font-size: 40px;
+}
+
+#formules{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.formule{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 350px;
+    border: 1px solid black;
+    margin: 50px;
+    padding-top: 15px;
+}
+
+.formule ul{
+    padding: 0;
+}
+
+.formule button{
+    margin: 10px;
+}

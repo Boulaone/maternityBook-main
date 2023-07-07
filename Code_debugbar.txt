@@ -1,0 +1,12 @@
+<?php
+require_once '../vendor/autoload.php';
+
+$whoops = new Whoops\Run;
+$whoops->pushHandler(new Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+?>
+
+
+// Ajout d'instructions de journalisation
+        error_log("User: " . print_r($user, true));
+        error_log("Password: " . $password);

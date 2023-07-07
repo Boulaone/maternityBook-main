@@ -1,0 +1,149 @@
+.sidebar {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--tertiary-color);
+    z-index: 100;
+    transition: width 300ms;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-brand {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.sidebar-brand > * {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-brand img {
+    width: 80px;
+    height: auto;
+}
+
+.sidebar-brand h2 {
+    font-size: 1.5rem;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    padding-left: 2rem;    
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;    
+    border-radius: 30px 0px 0px 30px;   
+    font-size: 1.5rem;
+    text-decoration: none;     
+    color: #fff;
+}
+
+.sidebar-menu li.active a {
+    background-color: #fff;
+    color: var(--tertiary-color);
+}
+
+.sidebar-menu a span:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-menu a span:first-child i {    
+    font-size: 1.5rem;
+    margin-right: 1rem; /* Marge droite de l'icône */
+    margin-left: -1rem; /* Nouvelle marge gauche de l'icône (négative pour déplacer vers la gauche) */
+}
+
+.sidebar-menu a span:last-child {
+    display: inline-block; /* Afficher le texte */
+    margin-left: 1rem; /* Ajouter une marge à gauche du texte pour créer un espace entre l'icône et le texte */
+}
+
+.sidebar-footer {
+    bottom: 20px;
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: 4rem;
+}
+
+.sidebar-profil {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar-profil img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid black 1px;
+    margin: 10px 20px;
+} 
+
+.sidebar-profil span {
+    font-size: 1.5rem;
+}
+
+.deconnexion {
+    margin-left: 40px;
+}
+
+.deconnexion a, i {
+    font-size: 1.2rem;
+}
+
+.deconnexion a {
+    margin-left: 10px;
+}
+
+/* Navbar Réduite */
+#nav-toggle:checked + .sidebar {
+    width: 70px;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+#nav-toggle:checked + .sidebar li a {
+    padding-left: 0rem;
+}
+
+#nav-toggle:checked + .sidebar li.active {
+    padding-left: 5px;
+    border-radius: 50%; 
+}
+
+#nav-toggle:checked + .sidebar li.active a{
+    padding: 0;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child {
+    display: none;
+}
+
+#nav-toggle:checked ~ .main-content {
+    margin-left: 70px;
+}
+
+#nav-toggle:checked ~ .main-content header {
+    width: calc(100% - 70px);
+    left: 70px;
+}

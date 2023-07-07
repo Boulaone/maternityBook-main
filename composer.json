@@ -1,0 +1,37 @@
+{
+    "name": "maternity_book/maternity_book",
+    "description": "Création d'un livre digital de grossesse",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Timothe Imbert",
+            "email": "timo.imbert@laposte.net",
+            "role": "Dev"
+        },
+        {
+            "name": "Alexandre Faucheux",
+            "email": "alexandre.f.devweb@gmail.com",
+            "role": "Dev"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^10.13"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "phpunit/phpunit": "^10.2",
+        "pestphp/pest": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/",
+            "Models\\": "Models/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

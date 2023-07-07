@@ -1,0 +1,72 @@
+/* admin Sidebar */
+
+/* Sidebar Menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: var(--trans-05);
+}
+
+/* Liens sidebar */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: var(--trans-03);
+}
+
+.sidebar .side-header {
+    margin-left: 20px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    background-color: var(--quaternary-color);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 34px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.openbtn:hover {
+    color: var(--tertiary-color);
+}
+
+/* Pousse à droite la sidebar à l'ouverture */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

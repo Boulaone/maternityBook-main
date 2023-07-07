@@ -1,0 +1,100 @@
+main {
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.image-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-profil img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid black 1px;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+.ligne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form .colonne {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, select {
+    margin: 0.5rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+form button, section button {
+    margin: 1rem;
+}
+
+main section {
+    width: 50%;
+}
+
+.ligne hr {
+    flex-grow: 1;
+    height: 2px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.mes-cliches {
+    display: flex;
+    justify-content: center;
+}
+
+main section .cliche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #FDF5E6;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.cliche h6 {
+    font-size: 2rem;
+}
+
+.cliche i {
+    font-size: 3rem;
+    margin: 1rem;
+    color: black;
+}
+
+.cliche p {
+    font-size: 0.8rem;
+}
+
+.maternite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
